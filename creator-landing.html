@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oppia</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="https://fonts.googleapis.com/css?family=Capriola:400|Rubik:300,400">
+  <style>
+    body {
+		background-color:#E8E7E3;
+		font-family: "Rubik", sans-serif;
+      font-weight: 400;
+		font-size: 1.6em;
+    }  
+	  
+	  
+	  .container-fluid {background-color: #AFD2EB;
+	  padding:20px 50px 50px;}
+	
+    h1 {
+      font-family: "Capriola", Arial, sans-serif;
+      color: #01645c;
+      font-size: 2.75em;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-family: "Rubik", sans-serif;
+      font-size: 2em;
+      font-weight: 300;
+      color: #04857c;
+      text-align: center;
+      margin: 18px 0;
+      line-height: 1.2;
+    }
+	  h3 {
+      font-family: "Rubik", sans-serif;
+      font-size: 1.8em;
+      font-weight: 300;
+      color: #111111;
+      text-align: center;
+      margin: 18px 0;
+      line-height: 1.2;
+    }
+	  
+	  
+	  
+	  
+p {
+    line-height: 1.2;
+    margin: 0;
+    text-align: center;
+    word-spacing: 0
+}
+	 .oppia-top-of-page-padding
+	  {height:56px;
+	  }
+	  
+	  
+	   .oppia-about-extra-info {
+      background-color: #009788;
+      color: #fff;
+      text-align: center;
+      margin-top: 2em;
+      padding: 2em 0.25em;
+    }
+    .oppia-about-extra-info .container {
+      max-width: 650px;
+      padding: 0;
+    }
+    .oppia-about-extra-info .container h2 {
+      color: #fff;
+      font-weight: 700;
+      margin: 0;
+    }
+    .oppia-about-extra-info .container h3 {
+      line-height: 1.65em;
+      margin: 0.7em 0;
+    }
+	 .oppia-about-extra-info .btn  {
+      background-color: #00796d;
+      font-family: "Rubik", Arial, sans-serif;
+      font-size: 16px;
+      max-width: 90%;
+      padding: 12px;
+      text-transform: uppercase;
+      white-space: normal;
+      width: 200px;
+      border-radius: 5px;
+    }
+    .oppia-about-extra-info button:hover {
+      background-color: rgba(5,190,178,1)
+    }
+    .jumbotron h2 {
+      margin-top: 0;
+    }
+	  
+	   .jumbotron {
+     background-color: white;
+		   border-radius: 0px;
+    }
+	  
+	  .jumbotron.lessons {margin-top:20px;}
+	  
+	  .bullet-holder p {text-align:center;}
+
+    header {
+      background: #009688;
+      height: 56px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      position: fixed;
+      width: 100%;
+      z-index: 100;
+    }
+
+    .logo {
+      float: left;
+      height: 56px;
+    }
+
+    .nav {
+      float: right;
+      height: 56px;
+    }
+
+    .container:first-of-type {
+      padding-top: 56px;
+    }
+
+    #otter {
+      position: relative;
+      width: 250px;
+      bottom: -35px;
+      left: 10px;
+    }
+
+   
+
+    button {
+      background-color: #015c53;
+      border-radius: 0;
+      color: #fff;
+      font-family: "Capriola", Arial, sans-serif;
+      font-size: 16px;
+      padding: 10px 0;
+      text-transform: uppercase;
+      width: 48%;
+      max-width: 300px;
+      border: none;
+    }
+
+    button:hover {
+      background-color: rgba(5,190,178,1);
+    }
+
+    .button-container {
+      text-align: center;
+    }
+
+    .bullet-holder img {
+     
+		margin-bottom: 10px;
+		margin-top: 10px;
+    }
+
+	
+
+    .bullet-holder p {
+      padding: 5px 10px;
+    }
+
+    .bullet {
+      display: block;
+      margin: auto;
+    }
+
+   
+    .lesson-container {
+      text-align: center;
+    }
+
+    .lesson-container img {
+      height: 250px;
+      width: 192px;
+    }
+
+    /* hack because i took a bad screenshot */
+    .lesson-container img:last-of-type {
+      transform: scale(0.96);
+      margin: 0px auto auto 2px;
+    }
+
+    footer {
+      background: #094142;
+      padding: 30px 80px;
+    }
+
+    .footer.desktop {
+      width: 670px;
+      margin: auto;
+      display: block;
+    }
+
+    .footer.mobile {
+      width: 145px;
+    }
+
+    .mobile { display: none; }
+
+    @media (max-width: 992px) {
+      #otter {
+        width: 175px;
+        bottom: -70px;
+      }
+		.container-fluid {padding:20px;}
+    }
+
+    @media (max-width: 768px) {
+      .mobile { display: block; }
+      .desktop { display: none !important; }
+
+      .button-container {
+        margin-bottom: 18px;
+      }
+
+       .oppia-about-extra-info {
+        padding: 15px 0;
+        height: auto;
+      }
+      .oppia-about-extra-info button {
+        position: auto;
+        top: auto;
+        transform: none;
+      }
+      .oppia-about-extra-info button:first-of-type {
+        margin-top: 0px;
+      }
+
+      footer {
+        padding: 30px;
+      }
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+</head>
+  <body>
+   
+    
+    <header>
+      <img src="images/oppia-logo.png" class="logo desktop" />
+      <img src="images/oppia-nav.png" class=" nav desktop" />
+
+      <img src="images/oppia-logo-mobile.png" class="logo mobile" />
+      <img src="images/oppia-nav-mobile.png" class="nav mobile" />
+    </header>
+    
+    <div class="oppia-top-of-page-padding"> </div>
+  <div class="container-fluid">
+      <div class="container">
+        
+       
+          <h1 class="text-center">Welcome to Oppia</h1>
+		  <div class="row"> <h2>Oppia's mission is to help anyone learn in an effective and enjoyable way. </h2></div>
+          
+  	   
+	  </div></div>
+     
+         
+          
+            <div class="container">
+      
+      <div class="jumbotron lessons">
+		  <div class="row" valign="top"><h2><b>Share Your Knowledge</b></h2><p align="center">
+			  By creating a set of free, high-quality, demonstrably effective lessons with the help of educators from around the world, Oppia aims to provide students with quality education — regardless of where they are or what traditional resources they have access to.<br><br> Whether you're a K-12 educator, a graduate student, or an individual who's passionate about a specific subject, creating an exploration is easy and free. </p>
+		  	
+		  </div>
+        <div class="row">
+          <div class="col-sm-4 bullet-holder">
+            <div class="row"><img class="bullet" src="https://www.oppia.org/build/bcbnbz/assets/images/general/creator-create-exp.png" /></div>
+            <div class="row"><p align="center"><b>Create an Exploration</b>
+
+about a topic you care about.</p></div>
+          </div>
+          <div class="col-sm-4 bullet-holder">
+            <div class="row"><img class="bullet" src="https://www.oppia.org/build/bcbnbz/assets/images/general/creator-pub-share.png" /></div>
+            <div class="row"><p align="center"><b>Publish & Share</b>
+
+your creations with the community.</p></div>
+          </div>
+          <div class="col-sm-4 bullet-holder">
+            <div class="row"><img class="bullet" src="https://www.oppia.org/build/bcbnbz/assets/images/general/creator-feedback.png" /></div>
+            <div class="row"><p align="center"><b>Earn feedback
+            </b> to improve your exploration</p></div>
+          </div>
+        </div>
+      </div>
+	   </div>
+	<div class="oppia-about-extra-info container-fluid">
+  		<div class="container">
+  			<button type="button">Browse Lessons</button>
+			<button type="button">Get Started</button>
+  		</div>
+  	</div>
+    <footer>
+      <img src="images/oppia-footer.png" class="footer desktop" />
+      <img src="images/oppia-footer-mobile.png" class="footer mobile" />
+    </footer>
+</body>
+</html>
+
